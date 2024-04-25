@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div> escreva um numero: 
+        <input id="agua" type="number">
+        <button onclick="verificar()">verificar</button>
+    </div>
+
+    <script>
+
+        function verificar() {
+            let n = parseFloat(document.getElementById("agua").value);
+
+            if(n > 0){
+                alert (n + " é positivo")
+            }
+            else if(n < 0){
+                alert (n + " é negativo")
+            }
+            else{
+                alert (" o numero é zero")
+            }
+        }
+
+    </script>
+</body>
+</html>

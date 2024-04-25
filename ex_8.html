@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let contadora = 0;
+        let nota;
+        let media;
+       
+        while(contadora < 4){
+            nota = parseFloat(prompt('insira as notas: '));
+            if (nota <= 0 || nota >= 10 ){
+                alert('Nota é inválida');
+                document.write(` Nota inválida: ${nota} <br />`);
+            } else {
+                document.write(` Nota válida: ${nota} <br />`);
+                media += nota; 
+            }
+          
+            contadora++
+        }
+
+        media = media / 4;
+
+        if(nota >= 5){
+            document.write(`Você passou no teste!`);
+        }
+        
+        else{
+            document.write(`Tente novamente!`);
+        }
+        
+
+    
+
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
